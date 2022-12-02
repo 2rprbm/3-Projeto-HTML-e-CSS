@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PodTuness</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <img src="assets/img/Logo.png" alt="Logotipo Pod tunes" class="cabecalho__logo">
+        <p class="cabecalho__nome-usuario">Raphael Rodrigues</p>
+        <i class="fa-regular fa-bell cabecalho__icone-sino"></i>
+        <div class="cabecalho__menu-fixo">
+            <button class="cabecalho__menu-fixo--botao">
+                <i class="fa-sharp fa-solid fa-bars cabecalho__icone-menu"></i>
+            </button>
+        </div>
+        <nav class="cabecalho__menu-navegacao--escondido">
+            <a href="#" class="cabecalho__menu-navegacao--voltar cabecalho__icone-menu"></a>
+            <img src="assets/img/Logo-maior.svg" alt="Logotipo Pod tunes" class="cabecalho__menu-navegacao--logo">
+            <a href="#" class="cabecalho__menu-navegacao--link">
+                <i class="fa-solid fa-house icone"></i>Início
+            </a>
+            <a href="#" class="cabecalho__menu-navegacao--link">
+                <i class="fa-solid fa-video icone"></i>Vídeos
+            </a>
+            <a href="#" class="cabecalho__menu-navegacao--link">
+                <i class="fa-solid fa-location-dot icone"></i>Picos
+            </a>
+            <a href="#" class="cabecalho__menu-navegacao--link">
+                <i class="fa-solid fa-users-line icone"></i>Integrantes
+            </a>
+            <a href="#" class="cabecalho__menu-navegacao--link">
+                <i class="fa-solid fa-person icone"></i>Camisas
+            </a>
+            <a href="#" class="cabecalho__menu-navegacao--link">
+                <i class="fa-solid fa-image icone"></i>Pinturas
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="video-destaque">
+            <h2>Início</h2>
+            <div class="card-video">
+                <picture class="imagens-destaque">
+                    <source srcset="assets/img/arte1@2x.png" media="(min-width: 1440px)">
+                    <img src="assets/img/arte1.png" alt="Vídeo Destaque - HZC - Life is">
+                </picture>
+                <div class="card-video__informacoes">
+                    <h4 class="card-video-destaque__titulo-secao-video-destaque">Vídeo em destaque</h4>
+                    <h3 class="card-video__titulo">HZC - Life is... / 2021</h3>
+                    <h5 class="card-video__autor">Raphael Rodrigues</h5>
+                    <div class="card-video__info-time-views">
+                        <h5 class="card-video__info--time">33 minutos</h5>
+                        <h5 class="card-video__info--view">53 visualizações</h5>
+                    </div>
+                    <button class="card-video-destaque__botao">Assistir agora</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos-recentes">
+            <div class="videos-recentes__secao">
+                <div class="videos-recentes__secao--titulo-link">
+                    <h3 class="videos-recentes__secao--titulo">Vídeos recentes</h3>
+                    <a href="#" class="link-ver-todos">Ver todos</a>
+                </div>
+                <ul class="videos-recentes__secao--videos-recentes">
+                    <li class="videos-recentes__secao-videos">
+                        <img src="assets/img/recentes1.png" alt="Vídeo HZC - Love Machine" class="videos-recentes__secao-videos--imagem">
+                        <h4 class="videos-recentes__secao-videos--titulo">HZC - Love Machine</h4>
+                        <p class="videos-recentes__secao-videos--autor">Júlia Fonseca</p>
+                    </li>
+                    <li class="videos-recentes__secao-videos">
+                        <img src="assets/img/recentes2.png" alt="Vídeo HZC - Vol. 3" class="videos-recentes__secao-videos--imagem">
+                        <h4 class="videos-recentes__secao-videos--titulo">HZC - Vol. 3</h4>
+                        <p class="videos-recentes__secao-videos--autor">Júlia Fonseca</p>
+                    </li>
+                    <li class="videos-recentes__secao-videos">
+                        <img src="assets/img/recentes3.png" alt="Vídeo HZC - Pescaria na Urca" class="videos-recentes__secao-videos--imagem">
+                        <h4 class="videos-recentes__secao-videos--titulo">Pescaria na Urca</h4>
+                        <p class="videos-recentes__secao-videos--autor">Júlia Fonseca</p>
+                    </li>
+                    <li class="videos-recentes__secao-videos">
+                        <img src="assets/img/recentes4.png" alt="Vídeo Vidalocagi - Guerreiros do Asfalto" class="videos-recentes__secao-videos--imagem">
+                        <h4 class="videos-recentes__secao-videos--titulo">Vidalocagi - Guerreiros do Asfalto</h4>
+                        <p class="videos-recentes__secao-videos--autor">Raphael Rodrigues</p>
+                    </li>
+                    <li class="videos-recentes__secao-videos">
+                        <img src="assets/img/recentes5.png" alt="Vídeo Vidalocagi - Não importa o nível" class="videos-recentes__secao-videos--imagem">
+                        <h4 class="videos-recentes__secao-videos--titulo">Vidalocagi - Não importa o nível</h4>
+                        <p class="videos-recentes__secao-videos--autor">Claudinei Peres Rodrigues</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <h3 class="card-video__titulo">Vídeos mais vistos</h3>
+        <section class="card-video__mais-vistos">
+            <div class="card-video-mais-vistos">
+                <img src="assets/img/arte2.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-video__informacoes">
+                    <h5 class="card-video__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-video__titulo-interno">HZC - Tudo sem Padrin</h3>
+                    <div class="card-video__info-time-play">
+                        <h5 class="card-video__info--time">33 minutos</h5>
+                        <button class="card-video__botao-play">
+                            <i class="card-video__botao-play--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-video-mais-vistos">
+                <img src="assets/img/arte3.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-video__informacoes">
+                    <h5 class="card-video__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-video__titulo-interno">HZC - Enter The Hu-flez</h3>
+                    <div class="card-video__info-time-play">
+                        <h5 class="card-video__info--time">55 minutos</h5>
+                        <button class="card-video__botao-play">
+                            <i class="card-video__botao-play--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-video-mais-vistos">
+                <img src="assets/img/arte4.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-video__informacoes">
+                    <h5 class="card-video__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-video__titulo-interno">HZC - Vol.3</h3>
+                    <div class="card-video__info-time-play">
+                        <h5 class="card-video__info--time">01h e 50 minutos</h5>
+                        <button class="card-video__botao-play">
+                            <i class="card-video__botao-play--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-video-mais-vistos">
+                <img src="assets/img/arte5.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-video__informacoes">
+                    <h5 class="card-video__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-video__titulo-interno">HZC - Love Machine</h3>
+                    <div class="card-video__info-time-play">
+                        <h5 class="card-video__info--time">1 minuto</h5>
+                        <button class="card-video__botao-play">
+                            <i class="card-video__botao-play--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="novas-artes">
+            <div class="novas-artes__secao">
+                <div class="novas-artes__secao--titulo-link">
+                    <h3 class="novas-artes__secao--titulo">Novas Artes</h3>
+                    <a href="#" class="link-ver-todos">Ver todos</a>
+                </div>
+                <ul class="novas-artes__secao--novas-artes">
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte1.png" alt="Arte Modelo" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Arte Modelo</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Júlia Fonseca</p>
+                    </li>
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte2.png" alt="Arte Vetorizada Exemplo" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Arte Vetorizada Exemplo</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Júlia Fonseca</p>
+                    </li>
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte3.png" alt="Arte Segurança" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Segurança</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Raphael Rodrigues</p>
+                    </li>
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte4.png" alt="Arte Malanguisse" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Malunguisse</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Niljane Medina Bozelli Rodrigues</p>
+                    </li>
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte5.png" alt="Arte Coroa da converse" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Coroa da converse</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Claudinei Peres Rodrigues</p>
+                    </li>
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte6.png" alt="Arte em 3D" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Arte 3D</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Claudinei Peres Rodrigues</p>
+                    </li>
+                    <li class="novas-artes__secao-artes">
+                        <img src="assets/img/nova-arte7.png" alt="Arte clássica - Pod Tuness" class="novas-artes__secao-novas-artes--imagem">
+                        <h4 class="novas-artes__secao-novas-artes--titulo">Arte - PodTuness</h4>
+                        <p class="novas-artes__secao-novas-artes--autor">Raphael Peres Rodrigues</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card-produtos-destaque">
+            <div class="card-produtos">
+                <picture class="imagens-destaque">
+                    <source srcset="assets/img/arte2@2x.png" media="(min-width: 1440px)">
+                    <img src="assets/img/arte6.png" alt="Arte Destaque - Only Zikas - Lagoa Dompa Club">
+                </picture>
+                <div class="card-produtos__informacoes">
+                    <h4 class="card-produtos-destaque__titulo-secao-produto-destaque">Arte Only Zikas</h4>
+                    <h3 class="card-produtos__titulo">Only Zikas - Lagoa Dompa Club</h3>
+                    <h5 class="card-produtos__autor">Raphael Rodrigues</h5>
+                    <div class="card-produtos__info-price-views">
+                        <h5 class="card-produtos__info--price">89,90</h5>
+                        <h5 class="card-produtos__info--view">100.383 visualizações</h5>
+                    </div>
+                    <button class="card-produtos__botao">Comprar agora</button>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="card-produtos__titulo">Camisas mais recentes</h3>
+        <section class="card-produtos__camisetas-recentes">
+            <div class="card-produtos-mais-recentes">
+                <img src="assets/img/arte7.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-produtos__informacoes">
+                    <h5 class="card-produtos__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-produtos__titulo-interno">IBM</h3>
+                    <div class="card-produtos__info-price-buy">
+                        <h5 class="card-produtos__info--price">306,49</h5>
+                        <button class="card-produto__botao-buy">
+                            <i class="card-produto__botao-buy--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produtos-mais-recentes">
+                <img src="assets/img/arte8.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-produtos__informacoes">
+                    <h5 class="card-produtos__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-produtos__titulo-interno">Huflez Crew Philosophy Club</h3>
+                    <div class="card-produtos__info-price-buy">
+                        <h5 class="card-produtos__info--price">176,00</h5>
+                        <button class="card-produto__botao-buy">
+                            <i class="card-produto__botao-buy--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produtos-mais-recentes">
+                <img src="assets/img/arte9.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-produtos__informacoes">
+                    <h5 class="card-produtos__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-produtos__titulo-interno">Corujita Noturna</h3>
+                    <div class="card-produtos__info-price-buy">
+                        <h5 class="card-produtos__info--price">66,30</h5>
+                        <button class="card-produto__botao-buy">
+                            <i class="card-produto__botao-buy--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produtos-mais-recentes">
+                <img src="assets/img/arte10.png" alt="Vídeo HZC - Tudo sem Padrin">
+                <div class="card-produtos__informacoes">
+                    <h5 class="card-produtos__autor">Raphael Rodrigues</h5>
+                    <h3 class="card-produtos__titulo-interno">GGG - Gatin G Gorro</h3>
+                    <div class="card-produtos__info-price-buy">
+                        <h5 class="card-produtos__info--price">306,49</h5>
+                        <button class="card-produto__botao-buy">
+                            <i class="card-produto__botao-buy--icone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <ul class="rodape">
+            <li class="rodape__dados">
+                <div class="rodape__dados-empresa">
+                    <ul> 
+                        <li>
+                            <h3 class="rodape__dados-empresa--titulo">Contato</h3>
+                        </li>
+                        <li>
+                            <p class="rodape__dados-empresa--contatos"><i class="fa-regular fa-envelope icones-contato"></i>E-mail: contato@podtuness.com.br</p>
+                        </li>
+                        <li>
+                            <p class="rodape__dados-empresa--contatos"><i class="fa-brands fa-whatsapp whats icones-contato"></i>Telefone|Whatsapp: (19) 99999-8888</p>
+                        </li>
+                        <li>
+                            <p class="rodape__dados-empresa--contatos"><i class="fa-brands fa-facebook face icones-contato"></i>Facebook: /podtunesstore</p>
+                        </li>         
+                        <li>
+                            <p class="rodape__dados-empresa--contatos"><i class="fa-brands fa-instagram insta icones-contato"></i>Instagram: /podtunesstore</p>
+                        </li>
+                        <li>
+                            <p class="rodape__dados-empresa--contatos"><i class="fa-brands fa-linkedin linkedin icones-contato"></i>Linkedln: /podtuness</p>
+                        </li>      
+                    </ul>  
+                </div>
+            </li>
+            <li class="rodape__dados">    
+                <div class="rodape__endereço">
+                    <ul>
+                        <li>
+                            <h3 class="rodape__endereco--titulo">Localização</h3>
+                        </li>
+                        <li>
+                            <div class="rodape__endereco--mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197490458295!2d-46.65906922529588!3d-23.56134956159053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1669665079175!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>    
+                        </li>    
+                        <li>
+                            <p class="rodape__endereco--texto-endereco"><i class="fa-solid fa-location-dot icone-localizacao"></i>Rua Visconde do Rio Branco, 726, Centro, São João da Boa Vista - SP, CEP. 13.870-010</p>
+                        </li>
+                    </ul>    
+                </div>
+            </li>
+        </ul>
+        <p class="rodape__direitos-autorais">&copy; Raphael Rodrigues</p>
+
+    </footer>
+
+    <script src="assets/scripts/index.js"></script>
+
+</body>
+
+</html>

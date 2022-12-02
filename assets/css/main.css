@@ -1,0 +1,298 @@
+main h2{
+    color: var(--cor-texto-geral);
+    font-family: var(--fonte);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-video, .card-produtos, .card-video-mais-vistos, .card-produtos-mais-recentes{
+    background-color: var(--cor-fundo-cards);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.imagens-destaque img{
+    width: 100%;
+}
+
+.videos-recentes__secao, .novas-artes__secao{
+    display: none;
+}
+
+.card-video__informacoes, .card-produtos__informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.card-video-destaque__titulo-secao-video-destaque, .card-produtos-destaque__titulo-secao-produto-destaque{
+    color: var(--cor-texto-geral);
+    font-size: 16px;
+}
+
+.card-video__titulo, .card-produtos__titulo, .card-video__titulo-interno, .card-produtos__titulo-interno{
+    color: var(--cor-texto-geral);
+    font-family: var(--fonte);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.card-video__autor, .card-produtos__autor{
+    color: var(--cor-interna-texto-card);
+    font-size: 14px;
+}
+
+.card-video__info-time-views, .card-produtos__info-price-views{
+    color: var(--cor-interna-texto-card);
+    display: flex;
+    font-size: 14px;
+    gap: 1rem;
+}
+
+.card-video__info--time::before{
+    content: url("../icons/icon-time.png");
+    padding-right: 5px;
+}
+
+.card-video__info--view::before, .card-produtos__info--view::before{
+    content: url("../icons/icon-view.png");
+    padding-right: 5px;
+}
+
+.card-video-destaque__botao, .card-produtos__botao{
+    align-items: center;
+    background-color: var(--cor-botoes);
+    border-radius: 10px;
+    border-style: none;
+    color: var(--cor-texto-geral);
+    display: flex;
+    font-size: 14px;
+    height: 2.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-video-destaque__botao::before{
+    content: url("../icons/icon-play.png");
+    padding-right: 10px;
+}
+
+.card-produtos-destaque{
+    margin-top: 2rem;
+}
+
+.card-video__info-time-play, .card-produtos__info-price-buy{
+    align-items: center;
+    color: var(--cor-interna-texto-card);
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card-video__botao-play, .card-produto__botao-buy{
+    background-color: var(--cor-botoes);
+    border-radius: 10px;
+    border-style: none; 
+    color: var(--cor-texto-geral);
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card-video__botao-play--icone{
+    content: url("../icons/icon-play.png");
+}
+
+.card-produtos__info--price::before{
+    content: url("../icons/icon-price.png");
+    padding-right: 5px;
+}
+
+.card-produtos__botao::before{
+    content: url("../icons/icon-buy.png");
+    padding-right: 10px;
+}
+
+.card-produto__botao-buy--icone{
+    content: url("../icons/icon-buy.png");
+}
+
+@media screen and (min-width: 720px){
+    
+    main{
+        grid-area: principal;
+    }
+
+    .card-video__titulo, .card-produtos__titulo{
+        font-size: 26px;
+    }
+
+    .card-video-destaque__titulo-secao-video-destaque, .card-produtos-destaque__titulo-secao-produto-destaque{
+        font-size: 18px;
+    }
+
+    .card-video__mais-vistos, .card-produtos__camisetas-recentes{
+        column-gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card-video-mais-vistos, .card-produtos-mais-recentes{
+        width: calc(50% - 0.75rem);
+    }
+
+    .card-video__titulo-interno, .card-produtos__titulo-interno{
+        margin-top: 5px;
+    }
+
+    .card-video__info-time-play, .card-produtos__info-price-buy{
+        margin-top: 0px;
+    }
+
+    .card-produtos-destaque{
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+
+    main{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: repeat(6, auto);
+        gap: 1rem;
+    }
+
+    .video-destaque{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .imagens-destaque img{
+        width: 100%;
+    }
+
+    .card-video-destaque__botao, .card-produtos__botao{
+        width: 200px
+    }
+
+    .videos-recentes{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: 3rem;
+    }
+
+    .videos-recentes__secao, .novas-artes__secao{
+        background-color: var(--cor-fundo-cards);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+        row-gap: 2rem;
+    }
+
+    .videos-recentes__secao--titulo-link, .novas-artes__secao--titulo-link{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .videos-recentes__secao--titulo, .novas-artes__secao--titulo{
+        color: var(--cor-texto-geral);
+        font-family: var(--fonte);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .link-ver-todos{
+        color: #0480DC;
+        font-family: var(--fonte);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .videos-recentes__secao--videos-recentes, .novas-artes__secao--novas-artes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    .videos-recentes__secao-videos, .novas-artes__secao-artes{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .videos-recentes__secao-videos--imagem, .novas-artes__secao-novas-artes--imagem{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        padding-right: 0.5rem;
+    }
+
+    .videos-recentes__secao-videos--titulo, .novas-artes__secao-novas-artes--titulo{
+        color: var(--cor-texto-geral);
+        font-family: var(--fonte);
+        font-size: 14px;
+        font-weight: 700;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-bottom: 0.5rem;
+    }
+
+    .videos-recentes__secao-videos--autor, .novas-artes__secao-novas-artes--autor{
+        color: var(--cor-interna-texto-card);
+        font-family: var(--fonte);
+        font-size: 14px;
+        font-weight: 400;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .card-video__titulo{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin-top: 0;
+    }
+
+    .card-video__mais-vistos{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .card-video-mais-vistos, .card-produtos-mais-recentes{
+        width: calc(25% - 0.75rem);
+    }
+
+    .novas-artes{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin-top: 2rem;
+    }
+
+    .card-produtos-destaque{
+        grid-column: 2/4;
+        grid-row: 4/5;
+        margin-top: 1rem;
+    }
+
+    .card-produtos__titulo{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        margin-top: 0;
+    }
+
+    .card-produtos__camisetas-recentes{
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+
+}

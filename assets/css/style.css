@@ -1,0 +1,60 @@
+@import url(footer.css);
+@import url(header.css);
+@import url(main.css);
+
+:root{
+    --cor-botoes: #0480DC;
+    --cor-fundo-cards: #2C343A;
+    --cor-fundo-principal: #1b1b1b;
+    --cor-interna-texto-card: #95999C;
+    --cor-texto-geral: #FFFFFF;
+    --fonte: 'Open Sans', sans-serif;
+}
+
+*.{
+    box-sizing: border-box;
+}
+
+hr{
+    margin-top: 28px;
+}
+
+main{
+    background-color: var(--cor-fundo-principal);
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+
+@media screen and (min-width: 720px){
+    body{
+        background-color: var(--cor-fundo-principal);
+        display: grid;
+        grid-template-areas: 
+        "menu-lateral cabecalho"
+        "menu-lateral principal"
+        "rodape rodape";
+        grid-template-columns: 30vw 1fr;
+    }
+
+    hr{
+        margin-top: 48px;
+    }
+
+@media screen and (min-width: 1440px){
+ 
+    body{
+        background-color: black;
+        grid-template-columns: 200px 1fr;
+    }
+ 
+    hr{
+        display: none;
+    }
+
+    main{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+}
